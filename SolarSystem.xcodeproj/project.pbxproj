@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		428CD0FE23F5F3DA0042B070 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428CD0FD23F5F3D90042B070 /* OpenGL.framework */; };
+		428CD10023F5F5FB0042B070 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 428CD0FF23F5F5FB0042B070 /* libglfw.3.3.dylib */; };
+		428CD10223F5F60C0042B070 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 428CD10123F5F60C0042B070 /* libGLEW.2.1.0.dylib */; };
+		428CD19723F6C5F00042B070 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428CD16023F6C5EE0042B070 /* main.cpp */; };
+		428CD19823F6C5F00042B070 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428CD19123F6C5EF0042B070 /* Shader.cpp */; };
+		428CD19923F6C5F00042B070 /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428CD19323F6C5EF0042B070 /* stb_image.cpp */; };
+		428CD19A23F6C5F00042B070 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 428CD19623F6C5F00042B070 /* glad.c */; };
+		428CD19C23F6C6630042B070 /* libassimp.5.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 428CD19B23F6C6630042B070 /* libassimp.5.0.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		428CD0C923F5F37E0042B070 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		428CD0CB23F5F37E0042B070 /* SolarSystem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SolarSystem; sourceTree = BUILT_PRODUCTS_DIR; };
+		428CD0FD23F5F3D90042B070 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		428CD0FF23F5F5FB0042B070 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		428CD10123F5F60C0042B070 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.1.0_1/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		428CD16023F6C5EE0042B070 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		428CD16123F6C5EE0042B070 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		428CD16423F6C5EE0042B070 /* mercurymap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mercurymap.jpg; sourceTree = "<group>"; };
+		428CD16523F6C5EE0042B070 /* Uranus.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Uranus.obj; sourceTree = "<group>"; };
+		428CD16623F6C5EE0042B070 /* mercurybump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mercurybump.jpg; sourceTree = "<group>"; };
+		428CD16723F6C5EE0042B070 /* Uranus.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Uranus.mtl; sourceTree = "<group>"; };
+		428CD16A23F6C5EE0042B070 /* jupiter.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jupiter.obj; sourceTree = "<group>"; };
+		428CD16B23F6C5EE0042B070 /* jupiter.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jupiter.mtl; sourceTree = "<group>"; };
+		428CD16D23F6C5EE0042B070 /* venmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venmap.jpg; sourceTree = "<group>"; };
+		428CD16E23F6C5EE0042B070 /* jupiter.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jupiter.obj; sourceTree = "<group>"; };
+		428CD16F23F6C5EE0042B070 /* jupiter.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jupiter.mtl; sourceTree = "<group>"; };
+		428CD17123F6C5EE0042B070 /* pluto.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pluto.mtl; sourceTree = "<group>"; };
+		428CD17223F6C5EE0042B070 /* pluto.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pluto.obj; sourceTree = "<group>"; };
+		428CD17323F6C5EE0042B070 /* plutomap2k.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plutomap2k.jpg; sourceTree = "<group>"; };
+		428CD17523F6C5EE0042B070 /* moon.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moon.mtl; sourceTree = "<group>"; };
+		428CD17623F6C5EE0042B070 /* neptune2k.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neptune2k.jpg; sourceTree = "<group>"; };
+		428CD17723F6C5EE0042B070 /* moon.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moon.obj; sourceTree = "<group>"; };
+		428CD17923F6C5EE0042B070 /* saturn_final.blend.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = saturn_final.blend.obj; sourceTree = "<group>"; };
+		428CD17A23F6C5EE0042B070 /* RingsTransparency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RingsTransparency.png; sourceTree = "<group>"; };
+		428CD17B23F6C5EE0042B070 /* SaturnRings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SaturnRings.png; sourceTree = "<group>"; };
+		428CD17C23F6C5EE0042B070 /* saturn_final.blend.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = saturn_final.blend.mtl; sourceTree = "<group>"; };
+		428CD17D23F6C5EE0042B070 /* saturn.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saturn.jpeg; sourceTree = "<group>"; };
+		428CD17F23F6C5EE0042B070 /* Jupiter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jupiter.jpg; sourceTree = "<group>"; };
+		428CD18023F6C5EE0042B070 /* jupiter.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jupiter.obj; sourceTree = "<group>"; };
+		428CD18123F6C5EE0042B070 /* jupiter.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jupiter.mtl; sourceTree = "<group>"; };
+		428CD18323F6C5EE0042B070 /* Earth.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Earth.obj; sourceTree = "<group>"; };
+		428CD18423F6C5EE0042B070 /* Earth.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Earth.tga; sourceTree = "<group>"; };
+		428CD18523F6C5EE0042B070 /* Earth.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Earth.mtl; sourceTree = "<group>"; };
+		428CD18723F6C5EE0042B070 /* Uranus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Uranus.jpg; sourceTree = "<group>"; };
+		428CD18823F6C5EE0042B070 /* Uranus.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Uranus.obj; sourceTree = "<group>"; };
+		428CD18923F6C5EE0042B070 /* Uranus.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Uranus.mtl; sourceTree = "<group>"; };
+		428CD18B23F6C5EE0042B070 /* mars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mars.jpg; sourceTree = "<group>"; };
+		428CD18C23F6C5EE0042B070 /* mars.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mars.obj; sourceTree = "<group>"; };
+		428CD18D23F6C5EE0042B070 /* mars.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mars.mtl; sourceTree = "<group>"; };
+		428CD18E23F6C5EF0042B070 /* VertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VertexShader.glsl; sourceTree = "<group>"; };
+		428CD18F23F6C5EF0042B070 /* FragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FragmentShader.glsl; sourceTree = "<group>"; };
+		428CD19023F6C5EF0042B070 /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		428CD19123F6C5EF0042B070 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		428CD19223F6C5EF0042B070 /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
+		428CD19323F6C5EF0042B070 /* stb_image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
+		428CD19423F6C5EF0042B070 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		428CD19523F6C5EF0042B070 /* stb_image.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stb_image.hpp; sourceTree = "<group>"; };
+		428CD19623F6C5F00042B070 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		428CD19B23F6C6630042B070 /* libassimp.5.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.5.0.0.dylib; path = ../../../../../usr/local/Cellar/assimp/5.0.1/lib/libassimp.5.0.0.dylib; sourceTree = "<group>"; };
+		42D112EE23F7252B00967E4F /* jupiter.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = jupiter.obj; sourceTree = "<group>"; };
+		42D112EF23F7252B00967E4F /* jupiter.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = jupiter.mtl; sourceTree = "<group>"; };
+		42D112F023F7252B00967E4F /* starmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = starmap.jpg; sourceTree = "<group>"; };
+		42D112F123F7C0D400967E4F /* sunmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunmap.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		428CD0C823F5F37E0042B070 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428CD19C23F6C6630042B070 /* libassimp.5.0.0.dylib in Frameworks */,
+				428CD10223F5F60C0042B070 /* libGLEW.2.1.0.dylib in Frameworks */,
+				428CD10023F5F5FB0042B070 /* libglfw.3.3.dylib in Frameworks */,
+				428CD0FE23F5F3DA0042B070 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		428CD0C223F5F37E0042B070 = {
+			isa = PBXGroup;
+			children = (
+				428CD0CD23F5F37E0042B070 /* SolarSystem */,
+				428CD0CC23F5F37E0042B070 /* Products */,
+				428CD0FC23F5F3D90042B070 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		428CD0CC23F5F37E0042B070 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				428CD0CB23F5F37E0042B070 /* SolarSystem */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428CD0CD23F5F37E0042B070 /* SolarSystem */ = {
+			isa = PBXGroup;
+			children = (
+				428CD16223F6C5EE0042B070 /* Resources */,
+				428CD19623F6C5F00042B070 /* glad.c */,
+				428CD16023F6C5EE0042B070 /* main.cpp */,
+				428CD18E23F6C5EF0042B070 /* VertexShader.glsl */,
+				428CD18F23F6C5EF0042B070 /* FragmentShader.glsl */,
+				428CD19123F6C5EF0042B070 /* Shader.cpp */,
+				428CD19223F6C5EF0042B070 /* Shader.hpp */,
+				428CD19323F6C5EF0042B070 /* stb_image.cpp */,
+				428CD19523F6C5EF0042B070 /* stb_image.hpp */,
+				428CD19023F6C5EF0042B070 /* Camera.hpp */,
+				428CD16123F6C5EE0042B070 /* Mesh.h */,
+				428CD19423F6C5EF0042B070 /* Model.h */,
+			);
+			path = SolarSystem;
+			sourceTree = "<group>";
+		};
+		428CD0FC23F5F3D90042B070 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				428CD19B23F6C6630042B070 /* libassimp.5.0.0.dylib */,
+				428CD10123F5F60C0042B070 /* libGLEW.2.1.0.dylib */,
+				428CD0FF23F5F5FB0042B070 /* libglfw.3.3.dylib */,
+				428CD0FD23F5F3D90042B070 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		428CD16223F6C5EE0042B070 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42D112ED23F7252B00967E4F /* Milky Way */,
+				428CD16323F6C5EE0042B070 /* Mercury */,
+				428CD16823F6C5EE0042B070 /* Sun */,
+				428CD16C23F6C5EE0042B070 /* Venus */,
+				428CD17023F6C5EE0042B070 /* Pluto */,
+				428CD17423F6C5EE0042B070 /* Neptune */,
+				428CD17823F6C5EE0042B070 /* Saturn */,
+				428CD17E23F6C5EE0042B070 /* Jupiter */,
+				428CD18223F6C5EE0042B070 /* Earth */,
+				428CD18623F6C5EE0042B070 /* Uranus */,
+				428CD18A23F6C5EE0042B070 /* Mars */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		428CD16323F6C5EE0042B070 /* Mercury */ = {
+			isa = PBXGroup;
+			children = (
+				428CD16423F6C5EE0042B070 /* mercurymap.jpg */,
+				428CD16523F6C5EE0042B070 /* Uranus.obj */,
+				428CD16623F6C5EE0042B070 /* mercurybump.jpg */,
+				428CD16723F6C5EE0042B070 /* Uranus.mtl */,
+			);
+			path = Mercury;
+			sourceTree = "<group>";
+		};
+		428CD16823F6C5EE0042B070 /* Sun */ = {
+			isa = PBXGroup;
+			children = (
+				42D112F123F7C0D400967E4F /* sunmap.jpg */,
+				428CD16A23F6C5EE0042B070 /* jupiter.obj */,
+				428CD16B23F6C5EE0042B070 /* jupiter.mtl */,
+			);
+			path = Sun;
+			sourceTree = "<group>";
+		};
+		428CD16C23F6C5EE0042B070 /* Venus */ = {
+			isa = PBXGroup;
+			children = (
+				428CD16D23F6C5EE0042B070 /* venmap.jpg */,
+				428CD16E23F6C5EE0042B070 /* jupiter.obj */,
+				428CD16F23F6C5EE0042B070 /* jupiter.mtl */,
+			);
+			path = Venus;
+			sourceTree = "<group>";
+		};
+		428CD17023F6C5EE0042B070 /* Pluto */ = {
+			isa = PBXGroup;
+			children = (
+				428CD17123F6C5EE0042B070 /* pluto.mtl */,
+				428CD17223F6C5EE0042B070 /* pluto.obj */,
+				428CD17323F6C5EE0042B070 /* plutomap2k.jpg */,
+			);
+			path = Pluto;
+			sourceTree = "<group>";
+		};
+		428CD17423F6C5EE0042B070 /* Neptune */ = {
+			isa = PBXGroup;
+			children = (
+				428CD17523F6C5EE0042B070 /* moon.mtl */,
+				428CD17623F6C5EE0042B070 /* neptune2k.jpg */,
+				428CD17723F6C5EE0042B070 /* moon.obj */,
+			);
+			path = Neptune;
+			sourceTree = "<group>";
+		};
+		428CD17823F6C5EE0042B070 /* Saturn */ = {
+			isa = PBXGroup;
+			children = (
+				428CD17923F6C5EE0042B070 /* saturn_final.blend.obj */,
+				428CD17A23F6C5EE0042B070 /* RingsTransparency.png */,
+				428CD17B23F6C5EE0042B070 /* SaturnRings.png */,
+				428CD17C23F6C5EE0042B070 /* saturn_final.blend.mtl */,
+				428CD17D23F6C5EE0042B070 /* saturn.jpeg */,
+			);
+			path = Saturn;
+			sourceTree = "<group>";
+		};
+		428CD17E23F6C5EE0042B070 /* Jupiter */ = {
+			isa = PBXGroup;
+			children = (
+				428CD17F23F6C5EE0042B070 /* Jupiter.jpg */,
+				428CD18023F6C5EE0042B070 /* jupiter.obj */,
+				428CD18123F6C5EE0042B070 /* jupiter.mtl */,
+			);
+			path = Jupiter;
+			sourceTree = "<group>";
+		};
+		428CD18223F6C5EE0042B070 /* Earth */ = {
+			isa = PBXGroup;
+			children = (
+				428CD18323F6C5EE0042B070 /* Earth.obj */,
+				428CD18423F6C5EE0042B070 /* Earth.tga */,
+				428CD18523F6C5EE0042B070 /* Earth.mtl */,
+			);
+			path = Earth;
+			sourceTree = "<group>";
+		};
+		428CD18623F6C5EE0042B070 /* Uranus */ = {
+			isa = PBXGroup;
+			children = (
+				428CD18723F6C5EE0042B070 /* Uranus.jpg */,
+				428CD18823F6C5EE0042B070 /* Uranus.obj */,
+				428CD18923F6C5EE0042B070 /* Uranus.mtl */,
+			);
+			path = Uranus;
+			sourceTree = "<group>";
+		};
+		428CD18A23F6C5EE0042B070 /* Mars */ = {
+			isa = PBXGroup;
+			children = (
+				428CD18B23F6C5EE0042B070 /* mars.jpg */,
+				428CD18C23F6C5EE0042B070 /* mars.obj */,
+				428CD18D23F6C5EE0042B070 /* mars.mtl */,
+			);
+			path = Mars;
+			sourceTree = "<group>";
+		};
+		42D112ED23F7252B00967E4F /* Milky Way */ = {
+			isa = PBXGroup;
+			children = (
+				42D112EE23F7252B00967E4F /* jupiter.obj */,
+				42D112EF23F7252B00967E4F /* jupiter.mtl */,
+				42D112F023F7252B00967E4F /* starmap.jpg */,
+			);
+			path = "Milky Way";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		428CD0CA23F5F37E0042B070 /* SolarSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428CD0D223F5F37E0042B070 /* Build configuration list for PBXNativeTarget "SolarSystem" */;
+			buildPhases = (
+				428CD0C723F5F37E0042B070 /* Sources */,
+				428CD0C823F5F37E0042B070 /* Frameworks */,
+				428CD0C923F5F37E0042B070 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SolarSystem;
+			productName = SolarSystem;
+			productReference = 428CD0CB23F5F37E0042B070 /* SolarSystem */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		428CD0C323F5F37E0042B070 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Parsa;
+				TargetAttributes = {
+					428CD0CA23F5F37E0042B070 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 428CD0C623F5F37E0042B070 /* Build configuration list for PBXProject "SolarSystem" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 428CD0C223F5F37E0042B070;
+			productRefGroup = 428CD0CC23F5F37E0042B070 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				428CD0CA23F5F37E0042B070 /* SolarSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		428CD0C723F5F37E0042B070 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428CD19923F6C5F00042B070 /* stb_image.cpp in Sources */,
+				428CD19823F6C5F00042B070 /* Shader.cpp in Sources */,
+				428CD19723F6C5F00042B070 /* main.cpp in Sources */,
+				428CD19A23F6C5F00042B070 /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		428CD0D023F5F37E0042B070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		428CD0D123F5F37E0042B070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		428CD0D323F5F37E0042B070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8DZT8637A;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3/lib,
+					/usr/local/Cellar/glew/2.1.0_1/lib,
+					/usr/local/Cellar/assimp/5.0.1/lib,
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		428CD0D423F5F37E0042B070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8DZT8637A;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3/lib,
+					/usr/local/Cellar/glew/2.1.0_1/lib,
+					/usr/local/Cellar/assimp/5.0.1/lib,
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		428CD0C623F5F37E0042B070 /* Build configuration list for PBXProject "SolarSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428CD0D023F5F37E0042B070 /* Debug */,
+				428CD0D123F5F37E0042B070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428CD0D223F5F37E0042B070 /* Build configuration list for PBXNativeTarget "SolarSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428CD0D323F5F37E0042B070 /* Debug */,
+				428CD0D423F5F37E0042B070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 428CD0C323F5F37E0042B070 /* Project object */;
+}
